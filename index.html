@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta name="viewport" content="width-device=width, initial-scale=1.0">
+        <title>GTA Rockstar - Best Selling Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
+
+    </head>
+
+<body>
+    <div class = "container">
+        <div class ="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                 <ul id="menuList">
+                    <li><a href="">History</a></li>
+                    <li><a href="">History 1</a></li>
+                    <li><a href="">History 2</a></li>
+                    <li><a href="">History 3</a></li>
+                 </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class = "col-1">
+                <h2>Grand Theft Auto V</h2>
+                <h3>"You Forget A Thousand Things Every Day, Pal. Make Sure This Is One Of 'Em".</h3>
+                <p>Released on September 17, 2013</p>
+                <h4>Customer Evaluations - <br>
+                    ⭐⭐⭐⭐
+                </h4>
+             <button type="button">Buy Now</button>
+            </div>
+            <div class = "col-2">
+                <img src="images/gta.png" class="controller">
+                <div class="color-box"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+<section id="wrapper" class="skewed">
+    <div class="layer bottom">
+      <div class="content-wrap">
+          <div class="content-body">
+              <h1>Pegassi Zentorno</h1>
+              <p><b>Class:</b> Supercar</p>
+              <p><b>Handling:</b> Great, especially at high speeds</p>
+              <p><b>Price:</b> Expensive (typically one of the costliest cars in the game)</p>
+          </div>
+          <img src="images/split1.jpeg" alt="">
+      </div>  
+    </div>
+    <div class="layer top">
+        <div class="content-wrap">
+            <div class="content-body">
+                <h1>Vapid Dominator</h1>
+                <p><b>Class:</b> Muscle Car</p>
+                <p><b>Handling:</b> High, but not as high as the Zentorno</p>
+                <p><b>Price:</b> More affordable compared to the Zentorno</p>          
+            </div>
+            <img src="images/split2.jpeg" alt="">
+        </div>  
+      </div>
+
+      <div class="handle"></div>
+</section>
+<script type="text/javascript" src="main.js"></script>
+                    
+</body>
+</html>
